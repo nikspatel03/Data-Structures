@@ -1,0 +1,38 @@
+
+public class BstDriver {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		BST obj = new BST();
+		
+		obj.insert(15);
+		obj.insert(10);
+		obj.insert(25);
+		obj.insert(3);
+		obj.insert(6);
+		obj.insert(23);
+		obj.insert(27);
+		
+		
+		boolean result = obj.search(80);
+		
+		if(result){
+			System.out.println("Found");
+		}
+		else
+		{
+			System.out.println("Not Found");
+		}
+		
+		System.out.println("Min num in Tree : " + Integer.toString(obj.findMin()));
+		System.out.println("Max num in Tree : " + Integer.toString(obj.findMax()));
+		System.out.println("Height of  Tree : " + Integer.toString(obj.findHeight()));
+		
+		obj.levelTraversal();
+		
+		
+	}
+
+}

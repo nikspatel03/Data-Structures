@@ -1,0 +1,30 @@
+
+public class BstDriver {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		BST obj = new BST();
+		
+		obj.root = obj.insert(obj.root,15);
+		obj.root = obj.insert(obj.root, 10);
+		obj.root = obj.insert(obj.root, 25);
+		obj.root = obj.insert(obj.root, 35);
+		obj.root = obj.insert(obj.root, 33);
+		obj.root = obj.insert(obj.root, 37);
+		
+		if(obj.search(obj.root,15) == true){
+			System.out.println("Found");
+		}
+		if(obj.search(obj.root,15) == true){
+			System.out.println("Found");
+		}
+		else{
+			System.out.println("Not Found");
+		}
+		
+		
+	}
+
+}

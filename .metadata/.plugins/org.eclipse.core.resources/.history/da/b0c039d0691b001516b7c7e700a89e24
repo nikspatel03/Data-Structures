@@ -1,0 +1,64 @@
+
+public class Queue {
+	
+	public static final int MAX_SIZE = 100;
+	int[] A = new int[MAX_SIZE];
+	int front;
+	int rear;
+	int count;
+	
+	
+	public Queue(){
+		
+		front = -1;
+		rear = -1;
+		count = 0;
+		
+	}
+	
+	
+	public void enQueue(int data){
+		
+		if(isFull()){
+			System.out.println("Can not inserted: Queue Full");
+			return;
+		}
+		else if(isEmpty()){
+			front = 0;
+			rear = 0;
+		}
+		else{
+			rear++;
+		}
+		
+		A[rear] = data;
+		
+		
+	}
+	
+	
+	public void 
+	
+	public boolean isEmpty(){
+		
+		if(front == -1 && rear == -1){
+			return true;
+		}
+		
+		return false;
+		
+	}
+	
+	public boolean isFull(){
+		
+		if((rear+1)%count == front ){
+			
+			return true;
+		}
+		return false;
+		
+	}
+	
+	
+
+}

@@ -1,0 +1,21 @@
+
+public class QueueDriver {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		Queue obj = new Queue();
+		
+	
+		obj.enQueue(2);
+		
+		
+		obj.print();
+		
+		
+		
+
+	}
+
+}

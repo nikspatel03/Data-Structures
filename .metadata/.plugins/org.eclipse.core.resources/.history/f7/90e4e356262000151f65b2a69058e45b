@@ -1,0 +1,72 @@
+
+public class BstDriver {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		BST obj = new BST();
+		obj.insert(12);
+		obj.insert(5);
+		obj.insert(15);
+		obj.insert(3);
+		obj.insert(7);
+		obj.insert(13);
+		obj.insert(17);
+		obj.insert(1);
+		obj.insert(9);
+		
+		
+		obj.deleteNode(15);
+		obj.deleteNode(9);
+		
+		
+		boolean result = obj.search(80);
+		
+		if(result){
+			System.out.println("Found");
+		}
+		else
+		{
+			System.out.println("Not Found");
+		}
+		
+		System.out.println("Min num in Tree : " + Integer.toString(obj.findMin()));
+		System.out.println("Max num in Tree : " + Integer.toString(obj.findMax()));
+		System.out.println("Height of  Tree : " + Integer.toString(obj.findHeight()));
+		System.out.println("Level Order Traversal is:: ");
+		obj.levelTraversal();
+		System.out.println("");
+		
+		System.out.println("pre Order Traversal is:: ");
+		obj.preOrder();
+		System.out.println("");
+		
+		System.out.println("in Order Traversal is:: ");
+		obj.inOrder();
+		System.out.println("");
+		
+		System.out.println("post Order Traversal is:: ");
+		obj.postOrder();
+		System.out.println("");
+		
+		boolean res = obj.isBinarySearchTree();
+		
+		if(res==true){
+			System.out.println("Yes");
+		}
+		else{
+			System.out.println("No");
+		}
+		
+		
+		
+		int succesor = obj.getSuccesor(13);
+		if(succesor != -1)
+			System.out.println("Successor is:"+" "+Integer.toString(succesor));
+		
+		
+		
+	}
+
+}

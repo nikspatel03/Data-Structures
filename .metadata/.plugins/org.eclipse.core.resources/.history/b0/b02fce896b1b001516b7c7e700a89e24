@@ -1,0 +1,21 @@
+
+public class QueueDriver {
+	
+	
+	public static void main(String[] args) {
+		
+		
+		Queue obj = new Queue();
+		
+		obj.enQueue(2);
+		obj.enQueue(3);
+		obj.enQueue(4);
+		obj.enQueue(5);
+		obj.printQueue();
+		
+		
+		
+		
+	}
+
+}

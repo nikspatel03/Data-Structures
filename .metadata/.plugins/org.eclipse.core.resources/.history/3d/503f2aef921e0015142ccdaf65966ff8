@@ -1,0 +1,31 @@
+
+public class BstDriver {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		BST obj = new BST();
+		
+		obj.insert(10);
+		obj.insert(12);
+		
+		obj.insert(8);
+		
+		obj.insert(15);
+		obj.insert(18);
+		
+		
+		boolean result = obj.search(19);
+		
+		if(result){
+			System.out.println("Found");
+		}
+		else
+		{
+			System.out.println("Not Found");
+		}
+		
+	}
+
+}
